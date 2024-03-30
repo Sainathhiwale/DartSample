@@ -11,3 +11,6 @@ void main(){
     print(ex);
   }
 }
+/*In Dart, readAsStringSync is a synchronous method used to read the contents of a file as a string. It is part of the dart:io library, which provides access to files and directories. This method reads the entire contents of the file into memory as a string.
+
+*/
