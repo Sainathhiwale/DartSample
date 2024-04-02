@@ -5,7 +5,7 @@ class ConstantConstructorDemo{
   final int rollnumber;
   // const constructor
   const ConstantConstructorDemo(this.age, this.rollnumber);
-  
+
 }
 void main(){
   
@@ -17,7 +17,6 @@ void main(){
 
   ConstantConstructorDemo obj3 = new ConstantConstructorDemo(5, 16);
   print("the obj3 hash code is: ${obj3.hashCode}");
-
   if(obj2==obj3){
     print("true");
   }else{
