@@ -28,6 +28,8 @@ void main(){
 }
 
 /*
+link: https://dart-tutorial.com/object-oriented-programming/encapsulation-in-dart/
+
 Encapsulation can be achieved by:
 
 Declaring the class properties as private by using underscore(_).
@@ -35,4 +37,6 @@ Providing public getter and setter methods to access and update the value of pri
 
 Note: Dart doesn’t support keywords like public, private, and protected. Dart uses _ (underscore) to make a property or method private.
 The encapsulation happens at library level, not at class level.
+
+Private property is a property that can only be accessed from same library. Dart does not have any keywords like private to define a private property. You can define it by prefixing an underscore (_) to its name.
 */
