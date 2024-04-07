@@ -11,4 +11,25 @@ void main(){
 
   String getDateTime = DateTime.now().toString();
   print("get time and date : $getDateTime");
+
+  DateTime myBirthday = DateTime.parse("1990-12-21");
+  DateTime today = DateTime.now();
+  Duration diff = today.difference(myBirthday);
+  print("Difference in days: " + diff.inDays.toString());
+  print("Difference in hours: " + diff.inHours.toString());
+  print("Difference in minutes: " + diff.inMinutes.toString());
+  print("Difference in seconds: " + diff.inSeconds.toString());
+  print("Difference in milliseconds: " + diff.inMilliseconds.toString());
+  print("Difference in microseconds: " + diff.inMicroseconds.toString());
+
+  DateTime myBirthdays = DateTime.parse("1990-12-21");
+  DateTime todays = DateTime.now();
+  print(todays);
+  if (myBirthdays.isBefore(todays)) {
+    print("My Birthday is before today.");
+  } else if (myBirthdays.isAfter(todays)) {
+    print("My Birthday is after today.");
+  } else if (myBirthdays.isAtSameMomentAs(todays)) {
+    print("My Birthday date and today's date is same.");
+  }
 }
